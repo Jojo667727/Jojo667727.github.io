@@ -4,136 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Njuguna joseph Wainaina - Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #0066cc;
+            --secondary: #1a1a2e;
+            --accent: #0066cc;
+            --background: #ffffff;
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #e0f7fa 0%, #e8f5e9 100%);
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
-        .container {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--secondary);
             max-width: 800px;
             margin: 0 auto;
-            background: white;
-            border-radius: 24px;
-            padding: 48px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 40px 24px;
+            background: var(--background);
         }
-        header { text-align: center; margin-bottom: 40px; }
-        .avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #00b894, #00cec9);
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 48px;
-            color: white;
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 2px solid var(--primary);
         }
-        h1 { font-size: 2.2rem; color: #2d3436; }
-        .tagline { color: #00b894; font-weight: 500; margin-top: 8px; }
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 8px;
+        }
         .contact {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 16px;
-            margin-top: 16px;
-        }
-        .contact a {
-            color: #00b894;
-            text-decoration: none;
-            padding: 8px 16px;
-            background: rgba(0,184,148,0.1);
-            border-radius: 20px;
+            color: #666;
             font-size: 0.9rem;
         }
-        section { margin-bottom: 32px; }
+        .contact a { color: var(--primary); text-decoration: none; }
+        .summary {
+            font-size: 1.05rem;
+            color: #444;
+            margin-bottom: 32px;
+            text-align: center;
+            font-style: italic;
+        }
+        section { margin-bottom: 28px; }
         h2 {
+            font-family: 'Merriweather', serif;
             font-size: 1.3rem;
-            color: #00b894;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        h2::before {
-            content: '';
-            width: 4px;
-            height: 24px;
-            background: #00b894;
-            border-radius: 2px;
-        }
-        .card {
-            background: #f8f9fa;
-            border-radius: 16px;
-            padding: 20px;
+            color: var(--primary);
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
             margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        h3 { color: #2d3436; font-size: 1.1rem; }
-        .meta { color: #636e72; font-size: 0.9rem; margin-top: 4px; }
-        .description { margin-top: 12px; color: #444; line-height: 1.7; }
+        .experience-item, .education-item { margin-bottom: 20px; }
+        .experience-header, .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+        h3 { font-size: 1.1rem; color: var(--secondary); }
+        .company, .institution { color: #666; font-weight: 600; }
+        .date { color: #888; font-size: 0.9rem; }
+        .description { margin-top: 8px; color: #444; }
+        ul { margin-top: 8px; padding-left: 20px; }
+        li { margin-bottom: 4px; color: #444; }
         .skills {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
         .skill {
-            background: linear-gradient(135deg, #00b894, #00cec9);
-            color: white;
-            padding: 8px 18px;
-            border-radius: 25px;
+            background: #f0f0f0;
+            padding: 6px 14px;
+            border-radius: 4px;
             font-size: 0.9rem;
-            font-weight: 500;
+        }
+        @media print {
+            body { padding: 0; }
+            header { border-bottom-color: #0066cc; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="avatar">N</div>
-            <h1>Njuguna joseph Wainaina</h1>
-            <p class="tagline">Customer-focused Bartender with solid experience in pre-opening teams and fine dining operations. Adept
+    <header>
+        <h1>Njuguna joseph Wainaina</h1>
+        <div class="contact">
+            <span>njugunajosephwainaina@gmail.com</span>
+            <span>+97430766044</span>
+            <span>Lusail, Doha , Qatar</span>
+            <a href="https://www.linkedin.com/in/joseph-njuguna-4a61ab3b2?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios">LinkedIn</a>
+            
+        </div>
+    </header>
+    
+    <p class="summary">Customer-focused Bartender with solid experience in pre-opening teams and fine dining operations. Adept
 at crafting signature drinks, upselling premium beverages, and maintaining strict food health and safety
 practices under HACCP guidelines.</p>
-            <div class="contact">
-                <a href="mailto:njugunajosephwainaina@gmail.com">njugunajosephwainaina@gmail.com</a>
-                <a href="https://www.linkedin.com/in/joseph-njuguna-4a61ab3b2?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_ios">LinkedIn</a>
-                
-            </div>
-        </header>
-        
-        <section>
+    
+    <section>
     <h2>Experience</h2>
-    <div class="card">
-    <h3>Bartender </h3>
-    <p class="meta">Rosewood Doha • Sep 2024 - Present</p>
-    <p class="description">Prepare and serve a wide range of classic and contemporary cocktails, wines, premium spirits, and
+    <div class="experience-item">
+    <div class="experience-header">
+        <div>
+            <h3>Bartender </h3>
+            <span class="company">Rosewood Doha</span>
+        </div>
+        <span class="date">Sep 2024 - Present</span>
+    </div>
+    <p class="description">-Prepare and serve a wide range of classic and contemporary cocktails, wines, premium spirits, and
 specialty beverages in line with brand standards, ensuring consistency, precision, and presentation
 excellence during every shift.
-Deliver refined, personalized guest service by engaging customers confidently, making tailored
+-Deliver refined, personalized guest service by engaging customers confidently, making tailored
 recommendations, and creating memorable beverage experiences aligned with luxury hospitality
 expectations.
-Operate POS systems accurately for order entry, billing, cash handling, and daily reconciliation while
+-Operate POS systems accurately for order entry, billing, cash handling, and daily reconciliation while
 maintaining full accountability for bar transactions and financial accuracy.
-Maintain strict compliance with HACCP and food safety regulations by upholding the highest
+-Maintain strict compliance with HACCP and food safety regulations by upholding the highest
 standards of cleanliness, sanitation, and proper storage of ingredients, garnishes, and bar
 equipment.
-Support inventory management by conducting regular stock counts, monitoring par levels,
+-Support inventory management by conducting regular stock counts, monitoring par levels,
 minimizing wastage, and coordinating timely replenishment of beverages and bar supplies.
-Collaborate closely with restaurant managers, sommeliers, servers, and kitchen teams to ensure
+-Collaborate closely with restaurant managers, sommeliers, servers, and kitchen teams to ensure
 smooth service flow, effective communication, and seamless coordination during high-volume
 operations.
-Contribute to menu development and beverage promotions by suggesting innovative cocktail ideas,
+-Contribute to menu development and beverage promotions by suggesting innovative cocktail ideas,
 seasonal creations, and upselling strategies that increase revenue and enhance guest satisfaction.
-Assist in pre-opening and operational setup, including bar layout organization, SOP implementation,
+-Assist in pre-opening and operational setup, including bar layout organization, SOP implementation,
 glassware selection, and team training to ensure readiness and service excellence from launch.</p>
-</div><div class="card">
-    <h3>Bartender </h3>
-    <p class="meta">Movenpic hotel and Residence by Accor • Dec 2021 - Sep 2024</p>
+    
+</div><div class="experience-item">
+    <div class="experience-header">
+        <div>
+            <h3>Bartender </h3>
+            <span class="company">Movenpic hotel and Residence by Accor</span>
+        </div>
+        <span class="date">Dec 2021 - Sep 2024</span>
+    </div>
     <p class="description">Designed and executed signature craft cocktails using premium spirits, fresh herbs, house-made
 syrups, infusions, and clarified components while maintaining consistency in taste, texture, and
 presentation.
@@ -151,9 +163,15 @@ Monitored stock levels, prepared purchase requisitions, and conducted monthly in
 control losses, prevent shortages, and support efficient bar operations.
 Provided attentive, customer-focused service in a fast-paced environment, handling guest feedback
 professionally and resolving concerns promptly to maintain high satisfaction levels</p>
-</div><div class="card">
-    <h3>Bar back</h3>
-    <p class="meta">Movenpic hotel and residence by Accor  • Feb 2021 - Dec 2021</p>
+    
+</div><div class="experience-item">
+    <div class="experience-header">
+        <div>
+            <h3>Bar back</h3>
+            <span class="company">Movenpic hotel and residence by Accor </span>
+        </div>
+        <span class="date">Feb 2021 - Dec 2021</span>
+    </div>
     <p class="description">bar tools to ensure uninterrupted workflow during peak hours.
 Maintained cleanliness and organization of the bar area, including polishing glassware, cleaning
 surfaces, disposing of waste, and adhering to hygiene and sanitation standards.
@@ -169,29 +187,56 @@ Supported smooth coordination between bartenders and service staff by ensuring t
 replenishment of supplies and maintaining organized workstations.
 Learned and practiced cocktail preparation techniques, bar operations procedures, and guest
 service standards to build foundational skills for advancement to mixologist and bartender roles.</p>
+    
 </div>
 </section>
-        
-        <section>
+    
+    <section>
     <h2>Education</h2>
-    <div class="card">
-    <h3>Barista Skills</h3>
-    <p class="meta">Nairobi Bar School</p>
-</div><div class="card">
-    <h3>Professional Bartending and mixology </h3>
-    <p class="meta">Nairobi Bar School </p>
-</div><div class="card">
-    <h3>WSET Level II</h3>
-    <p class="meta">QDC Qatar</p>
+    <div class="education-item">
+    <div class="education-header">
+        <div>
+            <h3>Barista Skills</h3>
+            <span class="institution">Nairobi Bar School</span>
+        </div>
+        <span class="date">Mar 2022</span>
+    </div>
+</div><div class="education-item">
+    <div class="education-header">
+        <div>
+            <h3>Professional Bartending and mixology </h3>
+            <span class="institution">Nairobi Bar School </span>
+        </div>
+        <span class="date">Dec 2021</span>
+    </div>
+</div><div class="education-item">
+    <div class="education-header">
+        <div>
+            <h3>WSET Level II</h3>
+            <span class="institution">QDC Qatar</span>
+        </div>
+        <span class="date">Oct 2025</span>
+    </div>
 </div>
 </section>
-        
-        <section>
+    
+    <section>
     <h2>Skills</h2>
     <div class="skills">
         <span class="skill">Advanced Cocktail &amp; Mixology Techniques (clarification, infusion, fat-washing) Menu Development &amp; Signature Cocktail Creation 100% 100% Spirit, Wine &amp; Craft Beer Knowledge HACCP &amp; Food Health Safety Compliance 100% 100% Inventory Control &amp; Stock Management Beverage Cost Control &amp; Waste Reduction 100% 100% Guest Engagement &amp; Upselling Strategies 100% Bar Setup, Organization &amp; Pre-Opening Operations 100%</span>
     </div>
 </section>
-    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <footer style="text-align: center; margin-top: 40px; color: #999; font-size: 0.8rem;">
+        Built with ResumeBuilder
+    </footer>
 </body>
 </html>
